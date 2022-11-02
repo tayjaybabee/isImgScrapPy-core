@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "isImgScrapPy"
+version = "0.1.0"
+description = ""
+authors = ["Taylor-Jayde Blackstone <t.blackstone@inspyre.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+
+[tool.hatch]
+[tool.hatch.envs.isImgScrapPy]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "isImgScrapPy"
+version = "0.1.1"
+summary = "An image scraper in Python by Inspyre Softworks"
+description = "An image scraper in Python by Inspyre Softworks. Just give isImgScrapPy a page (or list of pages) to scrape and off it goes."
+readme = "README.rst"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Taylor-Jayde Blackstone", email = "t.blackstone@inspyre.tech" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "bs4",
+  "requests",
+  "tqdm",
+  "urllib3",
+  "Pillow",
+  "pypattyrn",
+  "appdirs",
+  "imagehash",
+]
